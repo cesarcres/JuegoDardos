@@ -1,10 +1,13 @@
 public class DartsGame {
 
-    public static void turno(int i) {
+    public static int score = 0;
+    public static void turno(int pins) {
+        score += pins;
     }
 
     public static int score() {
-        return 0;
+        return score;
     }
+
 }
 

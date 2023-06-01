@@ -13,4 +13,13 @@ public class DartsGameTest {
         }
         assertEquals(0, DartsGame.score());
     }
+
+    @Test
+    void testToduno() throws Exception {
+        DartsGame dartsGame = new DartsGame();
+        for (int i = 0; i < 20; i++) {
+            DartsGame.turno(1);
+        }
+        assertEquals(20, DartsGame.score());
+    }
 }
